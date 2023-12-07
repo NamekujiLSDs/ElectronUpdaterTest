@@ -1,10 +1,10 @@
 const { ipcRenderer } = require("electron");
 
-window.onload = () => {
-  document.addEventListener("DOMContentLoaded", () => {
-    ipcRenderer.invoke("getVer").then((version) => {
-      document.getElementById("appVer").innerText = `VVC v${version}`;
-      console.log(`VVC v${version}`);
+document.addEventListener("DOMContentLoaded", () => {
+    ipcRenderer.invoke("appVer").then((version) => {
+        document.getElementById("appVer").innerText = `Vanced Voxiom Client v${version}`;
     });
-  });
-};
+    ipcRenderer.on('status', (e, v) => {
+        document.getElementById("updateStat").innerText = v;
+    })
+})
