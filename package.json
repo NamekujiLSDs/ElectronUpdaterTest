@@ -1,0 +1,24 @@
+{
+  "name": "electronupdatertest",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamekujiLSDs/ElectronUpdaterTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NamekujiLSDs/ElectronUpdaterTest/issues"
+  },
+  "homepage": "https://github.com/NamekujiLSDs/ElectronUpdaterTest#readme",
+  "dependencies": {
+    "electron": "^9.4.4",
+    "electron-builder": "^24.9.1",
+    "electron-updater": "^6.1.7"
+  }
+}
